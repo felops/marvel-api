@@ -1,8 +1,9 @@
-const get = require('../services/get-heroes')
+const axios = require('axios')
+const getHeroesService = require('../services/get-heroes')
 
-exports.handler = async function(event, context) {
+const lambda = (getHeroes) => async () => {
   try {
-   const heroes = await get()
+   const heroes = await getHeroes()
 
     return {
       statusCode: 200,
@@ -13,4 +14,9 @@ exports.handler = async function(event, context) {
       statusCode: 500
     }
   }
+}
+
+module.exports = {
+  handler: lambda(getHeroesService(axios)),
+  lambda,
 }
