@@ -3,11 +3,21 @@ const getHeroesService = require('../services/get-heroes')
 
 const lambda = (getHeroes) => async () => {
   try {
-   const heroes = await getHeroes()
+    const heroes = await getHeroes()
+
+    const processedHeroes = heroes.map(heroe => ({
+      id: heroe.id,
+      name: heroe.name,
+      thumbnail: heroe.thumbnail
+    }))
 
     return {
       statusCode: 200,
-      body: JSON.stringify(heroes)
+      body: JSON.stringify({
+        featured: processedHeroes,
+        xMen: processedHeroes,
+        guardiansOfTheGalaxy: processedHeroes
+      })
     }
   } catch (e) {
     return {

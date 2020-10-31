@@ -6,10 +6,10 @@ describe('heroes/services/get-heroes', () => {
       get: jest.fn().mockResolvedValue({
         data: {
           data: {
-            character: {
+            results: [{
               id: 202020,
               name: 'Spider-man',
-            }
+            }]
           }
         }
       })
@@ -17,11 +17,9 @@ describe('heroes/services/get-heroes', () => {
 
     const response = await getHeroesService(fetch)()
     
-    expect(response).toMatchObject({
-      character: {
-        id: 202020,
-        name: 'Spider-man',
-      }
-    })
+    expect(response).toMatchObject([{
+      id: 202020,
+      name: 'Spider-man',
+    }])
   })
 })
