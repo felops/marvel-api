@@ -23,4 +23,5 @@ jobs:
 
     - name: Update lambda code
       run: |
-        aws lambda update-function-code --function-name get-heroes --zip-file fileb://heroes.zip
+        aws lambda update-function-code --function-name marvel-get-heroes --zip-file fileb://heroes.zip
+        aws lambda update-function-code --function-name marvel-get-hero --zip-file fileb://heroes.zip

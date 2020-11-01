@@ -1,7 +1,7 @@
 const getHeroesService = require('../../../heroes/services/get-heroes.js')
 
 describe('heroes/services/get-heroes', () => {
-  test('should build the url corretly for characters', async () => {
+  test('should return an array of heroes', async () => {
     const fetch = {
       get: jest.fn().mockResolvedValue({
         data: {
@@ -9,6 +9,9 @@ describe('heroes/services/get-heroes', () => {
             results: [{
               id: 202020,
               name: 'Spider-man',
+            }, {
+              id: 101010,
+              name: 'Iron Man',
             }]
           }
         }
@@ -20,6 +23,9 @@ describe('heroes/services/get-heroes', () => {
     expect(response).toMatchObject([{
       id: 202020,
       name: 'Spider-man',
+    }, {
+      id: 101010,
+      name: 'Iron Man',
     }])
   })
 })
