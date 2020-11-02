@@ -42,6 +42,12 @@ const lambda = (getHero) => async (event) => {
       })
     }
   } catch (e) {
+    if(e.response.data.code === 404) {
+      return {
+        statusCode: 404
+      }
+    }
+
     return {
       statusCode: 500
     }
