@@ -20,7 +20,7 @@ describe('heroes/services/get-heroes', () => {
 
     const response = await getHeroesService(fetch)()
     
-    expect(response).toMatchObject([{
+    expect(response).toEqual([{
       id: 202020,
       name: 'Spider-man',
     }, {

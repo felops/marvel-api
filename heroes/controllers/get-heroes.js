@@ -1,22 +1,22 @@
 const axios = require('axios')
 const getHeroesService = require('../services/get-heroes')
 
-const lambda = (getHeroes) => async () => {
+const lambda = (getHeroes) => async (event) => {
   try {
-    const heroes = await getHeroes()
-
-    const processedHeroes = heroes.map(heroe => ({
-      id: heroe.id,
-      name: heroe.name,
-      thumbnail: heroe.thumbnail
-    }))
+    const {
+      offset,
+      limit,
+    } = event.queryStringParameters
+    const heroes = await getHeroes(offset, limit)
 
     return {
       statusCode: 200,
       body: JSON.stringify({
-        featured: processedHeroes,
-        xMen: processedHeroes,
-        guardiansOfTheGalaxy: processedHeroes
+        heroes: heroes.map(hero => ({
+          id: hero.id,
+          name: hero.name,
+          thumbnail: hero.thumbnail
+        }))
       })
     }
   } catch (e) {

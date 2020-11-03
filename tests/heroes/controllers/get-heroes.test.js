@@ -1,7 +1,7 @@
 const { lambda } = require('../../../heroes/controllers/get-heroes.js')
 
 describe('heroes/controllers/get-heroes', () => {
-  test('should build the url corretly for characters', async () => {
+  test('should return a list of heroes', async () => {
     const spiderMan = {
       id: 202020,
       name: 'Spider-man',
@@ -13,15 +13,25 @@ describe('heroes/controllers/get-heroes', () => {
       comics: {},
     }])
 
-    const response = await lambda(getHeroesService)()
-    
+    const response = await lambda(getHeroesService)({
+      queryStringParameters: {
+        offset: 20,
+        limit: 20, 
+      }
+    })
+
+    expect(getHeroesService).toHaveBeenNthCalledWith(1, 20, 20)
     expect(response).toEqual({
       statusCode: 200,
       body: JSON.stringify({
-        featured: [spiderMan],
-        xMen: [spiderMan],
-        guardiansOfTheGalaxy: [spiderMan],
+        heroes: [spiderMan],
       }),
+    })
+  })
+
+  test('should return 500', async () => {
+    expect(await lambda()()).toEqual({
+      statusCode: 500,
     })
   })
 })
