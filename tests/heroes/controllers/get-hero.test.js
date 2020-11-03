@@ -1,7 +1,7 @@
 const { lambda } = require('../../../heroes/controllers/get-hero.js')
 
-describe('heroes/controllers/get-heroes', () => {
-  test('should build the url corretly for characters', async () => {
+describe('heroes/controllers/get-hero', () => {
+  test('should return details about a hero', async () => {
     const items = [{
       id: 1,
       name: 'marvel1'
@@ -63,6 +63,46 @@ describe('heroes/controllers/get-heroes', () => {
           items: ['marvel1', 'marvel2'],
         },
       }),
+    })
+  })
+
+  test('should return not found (404)', async () => {
+    const getHeroService = jest.fn().mockRejectedValueOnce({
+      response: {
+        data: {
+          code: 404,
+        }
+      },
+    })
+
+    const response = await lambda(getHeroService)({
+      pathParameters: {
+        id: 'heroId',
+      }
+    })
+
+    expect(response).toEqual({
+      statusCode: 404,
+    })
+  })
+
+  test('should return 500', async () => {
+    const getHeroService = jest.fn().mockRejectedValueOnce({
+      response: {
+        data: {
+          code: 503,
+        }
+      },
+    })
+
+    const response = await lambda(getHeroService)({
+      pathParameters: {
+        id: 'heroId',
+      }
+    })
+
+    expect(response).toEqual({
+      statusCode: 500,
     })
   })
 })

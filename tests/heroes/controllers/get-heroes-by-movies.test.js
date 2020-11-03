@@ -22,7 +22,7 @@ describe('heroes/controllers/get-heroes-by-movies', () => {
     
     expect(getMovies).toHaveBeenNthCalledWith(1)
     expect(getHeroesByMovies).toHaveBeenNthCalledWith(1)
-    expect(response).toMatchObject({
+    expect(response).toEqual({
       statusCode: 200,
       body: JSON.stringify([{
         movie: 'avengers',
@@ -50,7 +50,7 @@ describe('heroes/controllers/get-heroes-by-movies', () => {
 
     const response = await lambda(getMovies, getHeroesByMovies)()
     
-    expect(response).toMatchObject({
+    expect(response).toEqual({
       statusCode: 500,
     })
   })

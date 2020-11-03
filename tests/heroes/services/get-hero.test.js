@@ -1,7 +1,7 @@
 const getHeroService = require('../../../heroes/services/get-hero.js')
 
 describe('heroes/services/get-hero', () => {
-  test('should return anobject of the hero', async () => {
+  test('should return an object of the hero', async () => {
     const fetch = {
       get: jest.fn().mockResolvedValue({
         data: {
@@ -17,7 +17,7 @@ describe('heroes/services/get-hero', () => {
 
     const response = await getHeroService(fetch)()
     
-    expect(response).toMatchObject({
+    expect(response).toEqual({
       id: 202020,
       name: 'Spider-man',
     })

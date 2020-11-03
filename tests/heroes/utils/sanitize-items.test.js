@@ -14,6 +14,6 @@ describe('heroes/utils/sanitize-items', () => {
       }]
     }
 
-    expect(sanitizeItems(object)).toBe(['marvel1', 'marvel2'])
+    expect(sanitizeItems(object)).toStrictEqual(['marvel1', 'marvel2'])
   })
 })
