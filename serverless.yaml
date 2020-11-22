@@ -1,0 +1,33 @@
+service: marvel-api
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+  environment:
+    MARVEL_API_URL: https://developer.marvel.com
+    MARVEL_PRIVATE_KEY: private_key
+    MARVEL_PUBLIC_KEY: public_key
+
+plugins:
+  - serverless-offline
+
+functions:
+  get-heroes-by-movies:
+    handler: heroes/controllers/get-heroes-by-movies.handler
+    events:
+      - http:
+          path: /heroes/movies
+          method: get
+  get-heroes:
+    handler: heroes/controllers/get-heroes.handler
+    events:
+      - http:
+          path: /heroes
+          method: get
+  get-hero:
+    handler: heroes/controllers/get-hero.handler
+    events:
+      - http:
+          path: /hero/{id}
+          method: get
