@@ -1,4 +1,4 @@
-const sanitizeItems = require('../../../heroes/utils/sanitize-items.js')
+const sanitizeItems = require('../../../../heroes/utils/sanitize-items.js')
 
 describe('heroes/utils/sanitize-items', () => {
   test('should return only the item names', () => {

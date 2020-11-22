@@ -1,4 +1,4 @@
-const { lambda } = require('../../../heroes/controllers/get-hero.js')
+const { lambda } = require('../../../../heroes/controllers/get-hero.js')
 
 describe('heroes/controllers/get-hero', () => {
   test('should return details about a hero', async () => {

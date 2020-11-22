@@ -1,4 +1,4 @@
-const scan = require('../../../../heroes/repositories/movies/scan')
+const scan = require('../../../../../heroes/repositories/movies/scan')
 
 describe('heroes/repositories/movies/scan', () => {
   test('should return a list of movies', async () => {

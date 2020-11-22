@@ -1,4 +1,4 @@
-const getHeroesService = require('../../../heroes/services/get-heroes.js')
+const getHeroesService = require('../../../../heroes/services/get-heroes.js')
 
 describe('heroes/services/get-heroes', () => {
   test('should return an array of heroes', async () => {

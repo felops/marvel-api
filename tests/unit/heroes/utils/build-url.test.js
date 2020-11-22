@@ -1,4 +1,4 @@
-const buildUrl = require('./../../../heroes/utils/build-url.js')
+const buildUrl = require('./../../../../heroes/utils/build-url.js')
 
 describe('heroes/utils/build-url', () => {
   beforeAll(() => {
