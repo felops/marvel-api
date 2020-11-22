@@ -1,0 +1,108 @@
+{
+  "comics": {
+    "available": 3957,
+    "items": [
+      "Spider-Man: 101 Ways to End the Clone Saga (1997) #1",
+      "2099 Alpha (2019) #1",
+      "A YEAR OF MARVELS TPB (Trade Paperback)",
+      "A+X (2012) #4",
+      "Absolute Carnage (2019) #1",
+      "Absolute Carnage (2019) #2",
+      "Absolute Carnage (2019) #5",
+      "Absolute Carnage: Symbiote Spider-Man (2019) #1",
+      "Actor Presents Spider-Man and the Incredible Hulk (2003) #1",
+      "Adventures of Spider-Man (1996) #1",
+      "Adventures of Spider-Man (1996) #2",
+      "Adventures of Spider-Man (1996) #3",
+      "Adventures of Spider-Man (1996) #4",
+      "Adventures of Spider-Man (1996) #5",
+      "Adventures of Spider-Man (1996) #6",
+      "Adventures of Spider-Man (1996) #7",
+      "Adventures of Spider-Man (1996) #8",
+      "Adventures of Spider-Man (1996) #9",
+      "Adventures of Spider-Man (1996) #10",
+      "Adventures of Spider-Man (1996) #11"
+    ]
+  },
+  "description": "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+  "events": {
+    "available": 38,
+    "items": [
+      "Acts of Vengeance!",
+      "Age of Ultron",
+      "Atlantis Attacks",
+      "Avengers Disassembled",
+      "Avengers VS X-Men",
+      "Chaos War",
+      "Civil War",
+      "Dark Reign",
+      "Days of Future Present",
+      "Dead No More: The Clone Conspiracy",
+      "Enemy of the State",
+      "Evolutionary War",
+      "Fear Itself",
+      "House of M",
+      "Inferno",
+      "Infinity",
+      "Inhumanity",
+      "Initiative",
+      "Kraven's Last Hunt",
+      "Maximum Carnage"
+    ]
+  },
+  "name": "Spider-Man",
+  "series": {
+    "available": 1005,
+    "items": [
+      " Superior Spider-Man Vol. 2: Otto-matic (2019)",
+      "2099 Alpha (2019)",
+      "A YEAR OF MARVELS TPB (2017)",
+      "A+X (2012 - 2014)",
+      "Absolute Carnage (2019 - Present)",
+      "Absolute Carnage: Symbiote Spider-Man (2019)",
+      "Actor Presents Spider-Man and the Incredible Hulk (2003)",
+      "Adventures of Spider-Man (1996 - 1997)",
+      "Adventures Of Spider-Man: Sinister Intentions (2019)",
+      "Adventures Of Spider-man: Spectacular Foes (2019)",
+      "Age of Heroes (2010)",
+      "AGE OF HEROES TPB (2011)",
+      "Age of Ultron (2013)",
+      "Agents of Atlas: The Complete Collection Vol. 1 (2018)",
+      "Alias (2001 - 2003)",
+      "Alias Omnibus (2006)",
+      "Alpha Flight (1983 - 1994)",
+      "Alpha: Big Time (2013)",
+      "Amazing Fantasy (1995 - 1996)",
+      "Amazing Fantasy (1962)"
+    ]
+  },
+  "stories": {
+    "available": 5943,
+    "items": [
+      "Interior #483",
+      "Cover #486",
+      "Interior #487",
+      "SENSATIONAL SPIDER-MAN (2006) #23",
+      "Interior #499",
+      "Cover #598",
+      "Interior #599",
+      "Interior #805",
+      "Cover #824",
+      "3 of 3 - Family Business",
+      "1 of 1 -  Secret of the Spider Shop",
+      "Cover #866",
+      "Fantastic Four (1998) #512",
+      "Interior #913",
+      "Fantastic Four (1998) #513",
+      "Interior #917",
+      "Cover #977",
+      "Cover #979",
+      "Amazing Spider-Man (1999) #500",
+      "Interior #1019"
+    ]
+  },
+  "thumbnail": {
+    "extension": "jpg",
+    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b"
+  }
+}

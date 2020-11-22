@@ -1,13 +1,14 @@
 {
   "name": "marvel-api",
   "version": "1.0.0",
-  "description": "An awesome api that consumes the Marvel API",
+  "description": "An awesome API that consumes the Marvel API",
   "scripts": {
     "start": "sls offline",
-    "test": "jest"
+    "test": "jest",
+    "test:unit": "jest unit",
+    "test:int": "jest integration",
+    "test:e2e": "sls offline & (sleep 6s && jest e2e && kill $(lsof -ti:3000))"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.783.0",
     "axios": "^0.21.0"
@@ -16,6 +17,7 @@
     "jest": "^26.6.1",
     "jest-dynalite": "^3.2.0",
     "serverless": "^2.12.0",
-    "serverless-offline": "^6.8.0"
+    "serverless-offline": "^6.8.0",
+    "supertest": "^6.0.1"
   }
 }

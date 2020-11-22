@@ -1,0 +1,84 @@
+{
+  "heroes": [
+    {
+      "id": 1016823,
+      "name": "Abomination (Ultimate)",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"
+      }
+    },
+    {
+      "id": 1009148,
+      "name": "Absorbing Man",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7"
+      }
+    },
+    {
+      "id": 1009149,
+      "name": "Abyss",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/535feab462a64"
+      }
+    },
+    {
+      "id": 1010903,
+      "name": "Abyss (Age of Apocalypse)",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/80/4c00358ec7548"
+      }
+    },
+    {
+      "id": 1011266,
+      "name": "Adam Destine",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"
+      }
+    },
+    {
+      "id": 1010354,
+      "name": "Adam Warlock",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860"
+      }
+    },
+    {
+      "id": 1010846,
+      "name": "Aegis (Trey Rollins)",
+      "thumbnail": {
+        "extension": "gif",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/4c0035c9c425d"
+      }
+    },
+    {
+      "id": 1011297,
+      "name": "Agent Brand",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/60/52695285d6e7e"
+      }
+    },
+    {
+      "id": 1011031,
+      "name": "Agent X (Nijo)",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"
+      }
+    },
+    {
+      "id": 1009150,
+      "name": "Agent Zero",
+      "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790"
+      }
+    }
+  ]
+}

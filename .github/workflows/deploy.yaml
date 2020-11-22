@@ -18,10 +18,11 @@ jobs:
 
     - name: Zip files
       run: |
-        npm i
+        npm i --production
         zip -r heroes.zip heroes
 
     - name: Update lambda code
       run: |
+        aws lambda update-function-code --function-name marvel-get-heroes-by-movies --zip-file fileb://heroes.zip
         aws lambda update-function-code --function-name marvel-get-heroes --zip-file fileb://heroes.zip
         aws lambda update-function-code --function-name marvel-get-hero --zip-file fileb://heroes.zip

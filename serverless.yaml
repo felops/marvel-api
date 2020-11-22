@@ -5,9 +5,9 @@ provider:
   runtime: nodejs12.x
 
   environment:
-    MARVEL_API_URL: https://developer.marvel.com
-    MARVEL_PRIVATE_KEY: private_key
-    MARVEL_PUBLIC_KEY: public_key
+    MARVEL_API_URL: http://gateway.marvel.com/v1/public
+    MARVEL_PRIVATE_KEY: ${ssm:marvel-private-key~true}
+    MARVEL_PUBLIC_KEY: ${ssm:marvel-public-key~true}
 
 plugins:
   - serverless-offline
