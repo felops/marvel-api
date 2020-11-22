@@ -1,3 +1,4 @@
 module.exports = {
-  setupFiles: ["<rootDir>/tests/unit/set-env-vars.js"]
+  preset: 'jest-dynalite',
+  setupFiles: ['<rootDir>/tests/unit/set-env-vars.js'],
 }
